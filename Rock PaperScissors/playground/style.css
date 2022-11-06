@@ -1,0 +1,121 @@
+:root{
+    --imgh:.5rem;
+    --imgw:.5rem;
+    --font: 'Nabla', cursive;
+    --txt:'Press Start 2P', cursive;
+    --bg:linear-gradient(#A020F0,#C8A2C8);
+}   
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--bg);
+}
+
+img{
+    height:10em;
+    width: 10em;
+    border-radius: 5em;
+    margin-top: 2em;
+    text-align: center;
+    margin: 2em .8em 2em .5em;
+    background:linear-gradient(#7f81fa,#f65fc9);
+    
+}
+header{
+    margin-top: 2em;
+    font-family: var(--txt);
+    text-align: center;
+    padding: 1em;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    padding: 4em;
+    margin-bottom: 1.5em;
+}
+.players{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+    font-family: 'Kanit', sans-serif;
+    font-size:1em;
+    border-radius: 2em;
+    background-color: rgba(138, 136, 136, 0.5);
+    width:20%;
+    height: 18em;
+    text-align: center;
+}
+span{
+    font-size: 2em;
+    margin-top: 3em;
+    padding: .5em;
+    font-family: var(--font);
+}
+#btns{
+    align-items: center;
+    text-align: center;
+    margin-bottom: .8em;
+}
+#btns button{
+    border:none;
+    border-radius: 2.5em;
+    padding:.8em;
+    width: 10em;
+    margin:1em;
+    text-align: center;
+    font-family: var(--txt);
+}
+button:hover{
+    transition: .2s ease-in;
+    color: white;
+    background-color: #f65fc9;
+}
+
+@media (max-width: 600px) and (min-width:320px) {
+
+    .container{
+       flex-direction: column;
+       align-items: center;
+       padding: 8%;
+    }
+    .container span{
+        padding: auto;
+        margin: auto;
+    }
+    .players{
+        width:100%;
+    }
+    .players img{
+        padding:auto;
+        margin: auto;
+    
+    }
+  }
+  @media (max-width: 1024px) and (min-width:600px) {
+
+    .container{
+        align-items: center;
+        padding: 8%;
+     }
+     .container span{
+         padding: auto;
+         margin: auto;
+     }
+     .players{
+         width:50%;
+         
+     }
+     .players img{
+         padding:auto;
+         margin: auto;
+     
+     }
+  }

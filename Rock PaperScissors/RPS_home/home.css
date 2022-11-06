@@ -1,0 +1,59 @@
+:root{
+    --imgh:.5rem;
+    --imgw:.5rem;
+    --font: 'Nabla', cursive;
+    --txt:'Press Start 2P', cursive;
+    
+}
+
+*{
+    margin: auto;
+    padding: auto;
+    box-sizing: border-box;
+}
+body{
+    background-color: #C8A2C8;
+}
+header{
+    margin: 2em;
+    text-align: center;
+    padding: 4%;
+    margin:4%;
+    font-family: var(--txt);
+    font-size: .5em;
+}
+header h1{
+    font-size: 4em;
+}
+body{
+     background-color: #C8A2C8;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 2px solid red;
+    /* padding: 5%;
+    margin:5%; */
+    margin-left: 25%;
+    margin-right: 25%;
+}
+.main .btns{
+    padding: 4%;
+    margin-top: .5em;
+    margin-bottom: .5em;
+    width: 45%;
+    border-radius:10em;  
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Kanit', sans-serif;
+
+}
+footer{
+    text-align: center;
+    font-family: var(--font);
+    margin-top: 2em;
+    margin-bottom: 0;
+
+}
+
